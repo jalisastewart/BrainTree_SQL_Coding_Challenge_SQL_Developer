@@ -6,7 +6,14 @@ import os
 
 # Read CSV file to panda DataFrame
 csv_file = r'C:\Users\jstew\DE_projects\BrainTree_SQL_Coding_Challenge\BrainTree_SQL_Coding_Challenge_SQL_Developer\data_csv\continent_map.csv'
+csv_file2 = r'C:\Users\jstew\DE_projects\BrainTree_SQL_Coding_Challenge\BrainTree_SQL_Coding_Challenge_SQL_Developer\data_csv\continents.csv'
+csv_file3 = r'C:\Users\jstew\DE_projects\BrainTree_SQL_Coding_Challenge\BrainTree_SQL_Coding_Challenge_SQL_Developer\data_csv\countries.csv'
+csv_file4 = r'C:\Users\jstew\DE_projects\BrainTree_SQL_Coding_Challenge\BrainTree_SQL_Coding_Challenge_SQL_Developer\data_csv\per_capita.csv'
+
 df = pd.read_csv(csv_file)
+df2 = pd.read_csv(csv_file2)
+df3 = pd.read_csv(csv_file3)
+df4 = pd.read_csv(csv_file4)
 
 # MySQL connection parameters
 username = os.getenv('MYSQL_USERNAME')
@@ -18,3 +25,8 @@ database = os.getenv('MYSQL_DATABASE')
 # Transform
 
 print(df)
+print(df2)
+print(df3)
+print(df4)
+
+
